@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+$soft-red: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+$dark-brown: hsl(25, 47%, 15%);
+$medium-brown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$very-pale-orange: hsl(33, 100%, 98%);
 $breakpoints: (
     "phone-down": 500px,
     "tablet-up": 768px,
@@ -18,4 +25,98 @@ $breakpoints: (
 }
 html {
     font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+html,body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $cream;
+}
+main {
+    flex-grow: 1;
+    margin: 50px 30px;
+}
+.status {
+    background-color: $soft-red;
+    border-radius: 8px;
+    color: $cream;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    p {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .logo {
+        position: relative;
+    }
+    .full {
+        background-color: $dark-brown;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+    .circle {
+        height: 38px;
+        width: 38px;
+        border-radius: 50%;
+        border: solid $cream 2px;
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+}
+.card {
+    background-color: $very-pale-orange;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 20px 15px;
+    h2 {
+        font-size: 2.2rem;
+    }
+    .chart {
+        margin: 20px 0;
+        height: 175px;
+        display: flex;
+        justify-content: space-around;
+        .day {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .bar {
+            height: attr(amount);
+        }
+    }
+    hr {
+        border-top: solid $cream 1.5px;
+    }
+    .result {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        p {
+            font-size: 1.4rem;
+            color: $medium-brown;
+        }
+        h3 {
+            color: $dark-brown;
+            font-weight: 700;
+            font-size: 2.8rem;
+        }
+        .progress {
+            align-self: flex-end;
+        }
+        h4 {
+            text-align: right;
+            color: $dark-brown;
+            font-size: 1.4rem;
+        }
+    }
 }

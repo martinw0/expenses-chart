@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(27deg, 66%, 92%);
+}
+
+main {
+  flex-grow: 1;
+  margin: 50px 30px;
+}
+
+.status {
+  background-color: hsl(10deg, 79%, 65%);
+  border-radius: 8px;
+  color: hsl(27deg, 66%, 92%);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.status h1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.status p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.status .logo {
+  position: relative;
+}
+.status .full {
+  background-color: hsl(25deg, 47%, 15%);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.status .circle {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  border: solid hsl(27deg, 66%, 92%) 2px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+
+.card {
+  background-color: hsl(33deg, 100%, 98%);
+  margin-top: 15px;
+  border-radius: 8px;
+  padding: 20px 15px;
+}
+.card h2 {
+  font-size: 2.2rem;
+}
+.card .chart {
+  margin: 20px 0;
+  height: 175px;
+  display: flex;
+  justify-content: space-around;
+}
+.card .chart .day {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.card .chart .bar {
+  height: attr(amount);
+}
+.card hr {
+  border-top: solid hsl(27deg, 66%, 92%) 1.5px;
+}
+.card .result {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.card .result p {
+  font-size: 1.4rem;
+  color: hsl(28deg, 10%, 53%);
+}
+.card .result h3 {
+  color: hsl(25deg, 47%, 15%);
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.card .result .progress {
+  align-self: flex-end;
+}
+.card .result h4 {
+  text-align: right;
+  color: hsl(25deg, 47%, 15%);
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

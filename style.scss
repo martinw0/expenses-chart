@@ -18,6 +18,7 @@ $breakpoints: (
         &{ @content; }
     }
 }
+$chart-height: 175px;
 * {
     padding: 0;
     margin: 0;
@@ -83,7 +84,7 @@ main {
     }
     .chart {
         margin: 20px 0;
-        height: 175px;
+        height: $chart-height;
         display: flex;
         justify-content: space-around;
         .day {
@@ -91,7 +92,18 @@ main {
             flex-direction: column-reverse;
         }
         .bar {
-            height: attr(amount);
+            width: 100%;
+            background-color: $soft-red;
+            border-radius: 3px;
+        }
+        .bar.biggest {
+            background-color: $cyan;
+        }
+        .day span {
+            color: $cream;
+            background-color: $dark-brown;
+            padding: 2px 5px;
+            border-radius: 3px;
         }
     }
     hr {

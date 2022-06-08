@@ -80,7 +80,18 @@ main {
   flex-direction: column-reverse;
 }
 .card .chart .bar {
-  height: attr(amount);
+  width: 100%;
+  background-color: hsl(10deg, 79%, 65%);
+  border-radius: 3px;
+}
+.card .chart .bar.biggest {
+  background-color: hsl(186deg, 34%, 60%);
+}
+.card .chart .day span {
+  color: hsl(27deg, 66%, 92%);
+  background-color: hsl(25deg, 47%, 15%);
+  padding: 2px 5px;
+  border-radius: 3px;
 }
 .card hr {
   border-top: solid hsl(27deg, 66%, 92%) 1.5px;

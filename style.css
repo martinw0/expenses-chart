@@ -97,6 +97,13 @@ main {
 .card .chart .bar.biggest {
   background-color: hsl(186deg, 34%, 60%);
 }
+.card .chart .bar:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+.card .chart .bar:hover + span {
+  display: block;
+}
 .card .chart .day span {
   color: hsl(27deg, 66%, 92%);
   background-color: hsl(25deg, 47%, 15%);

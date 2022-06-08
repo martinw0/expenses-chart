@@ -109,6 +109,13 @@ main {
         .bar.biggest {
             background-color: $cyan;
         }
+        .bar:hover {
+            opacity: 60%;
+            cursor: pointer;
+        }
+        .bar:hover + span {
+            display: block;
+        }
         .day span {
             color: $cream;
             background-color: $dark-brown;

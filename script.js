@@ -1,4 +1,9 @@
 var chart = document.querySelector('.card .chart');
+var day = document.querySelector('.chart .day.mon p');
+var dayHeight = day.offsetHeight;
+dayHeight += parseInt(window.getComputedStyle(day).getPropertyValue('margin-top'));
+dayHeight += parseInt(window.getComputedStyle(day).getPropertyValue('margin-bottom'));
+var maxBarSize = chart.clientHeight - dayHeight;
 fetch('data.json')
 .then(function (response) {
     if (!response.ok) {
@@ -11,7 +16,7 @@ fetch('data.json')
     amounts = amounts.sort();
     amounts = amounts.reverse();
     var biggestAmount = amounts[0];
-    var ratio = chart.clientHeight / biggestAmount;
+    var ratio =  maxBarSize / biggestAmount;
     json.forEach(element => {
         document.querySelector('.chart .' + element.day + ' .bar').style.height = element.amount * ratio + 'px';
         if (element.amount === biggestAmount) {

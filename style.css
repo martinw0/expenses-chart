@@ -28,17 +28,20 @@ main {
 .status {
   background-color: hsl(10deg, 79%, 65%);
   border-radius: 8px;
+  margin-top: 13px;
   color: hsl(27deg, 66%, 92%);
-  padding: 15px;
+  padding: 17px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .status h1 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .status p {
-  font-size: 2rem;
+  margin-top: 6px;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .status .logo {
@@ -62,7 +65,7 @@ main {
 
 .card {
   background-color: hsl(33deg, 100%, 98%);
-  margin-top: 15px;
+  margin-top: 16px;
   border-radius: 8px;
   padding: 20px 15px;
 }
@@ -70,17 +73,24 @@ main {
   font-size: 2.2rem;
 }
 .card .chart {
-  margin: 20px 0;
-  height: 175px;
+  margin-top: 43px;
+  margin-bottom: 23px;
+  height: 190px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .card .chart .day {
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
+}
+.card .chart .day p {
+  margin: 5px 0;
+  color: hsl(28deg, 10%, 53%);
+  font-size: 1.2rem;
 }
 .card .chart .bar {
-  width: 100%;
+  width: 31px;
   background-color: hsl(10deg, 79%, 65%);
   border-radius: 3px;
 }
@@ -92,23 +102,27 @@ main {
   background-color: hsl(25deg, 47%, 15%);
   padding: 2px 5px;
   border-radius: 3px;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  display: none;
 }
 .card hr {
   border-top: solid hsl(27deg, 66%, 92%) 1.5px;
 }
 .card .result {
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
   justify-content: space-between;
 }
 .card .result p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: hsl(28deg, 10%, 53%);
 }
 .card .result h3 {
+  margin-top: 7px;
   color: hsl(25deg, 47%, 15%);
   font-weight: 700;
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 .card .result .progress {
   align-self: flex-end;
@@ -117,6 +131,10 @@ main {
   text-align: right;
   color: hsl(25deg, 47%, 15%);
   font-size: 1.4rem;
+}
+
+.attribution {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

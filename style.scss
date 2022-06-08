@@ -43,16 +43,19 @@ main {
 .status {
     background-color: $soft-red;
     border-radius: 8px;
+    margin-top: 13px;
     color: $cream;
-    padding: 15px;
+    padding: 17px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     h1 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-weight: 400;
     }
     p {
-        font-size: 2rem;
+        margin-top: 6px;
+        font-size: 2.5rem;
         font-weight: 700;
     }
     .logo {
@@ -76,23 +79,30 @@ main {
 }
 .card {
     background-color: $very-pale-orange;
-    margin-top: 15px;
+    margin-top: 16px;
     border-radius: 8px;
     padding: 20px 15px;
     h2 {
         font-size: 2.2rem;
     }
     .chart {
-        margin: 20px 0;
-        height: $chart-height;
+        margin-top: 43px;
+        margin-bottom: 23px;
+        height: 190px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         .day {
             display: flex;
             flex-direction: column-reverse;
+            align-items: center;
+            p {
+                margin: 5px 0;
+                color: $medium-brown;
+                font-size: 1.2rem;
+            }
         }
         .bar {
-            width: 100%;
+            width: 31px;
             background-color: $soft-red;
             border-radius: 3px;
         }
@@ -104,23 +114,27 @@ main {
             background-color: $dark-brown;
             padding: 2px 5px;
             border-radius: 3px;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+            display: none;
         }
     }
     hr {
         border-top: solid $cream 1.5px;
     }
     .result {
-        margin-top: 20px;
+        margin-top: 25px;
         display: flex;
         justify-content: space-between;
         p {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             color: $medium-brown;
         }
         h3 {
+            margin-top: 7px;
             color: $dark-brown;
             font-weight: 700;
-            font-size: 2.8rem;
+            font-size: 3rem;
         }
         .progress {
             align-self: flex-end;
@@ -131,4 +145,7 @@ main {
             font-size: 1.4rem;
         }
     }
+}
+.attribution {
+    text-align: center;
 }

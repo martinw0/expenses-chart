@@ -17,5 +17,6 @@ fetch('data.json')
         if (element.amount === biggestAmount) {
             document.querySelector('.chart .' + element.day + ' .bar').classList.add('biggest');
         }
+        document.querySelector('.chart .' + element.day + ' span').innerHTML = '$' + element.amount;
     });
 });

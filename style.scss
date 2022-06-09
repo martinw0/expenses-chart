@@ -58,7 +58,8 @@ main {
     justify-content: space-between;
     align-items: center;
     @include media-min('tablet-down') {
-        padding: 22px;
+        padding: 22px 50px;
+        border-radius: 15px;
     }
     h1 {
         font-size: 1.5rem;
@@ -103,6 +104,7 @@ main {
         margin-top: 22px;
         width: 538px;
         padding: 30px;
+        border-radius: 15px;
     }
     h2 {
         font-size: 2.2rem;
@@ -139,6 +141,7 @@ main {
             border-radius: 3px;
             @include media-min('tablet-down') {
                 width: 50px;
+                border-radius: 5px;
             }
         }
         .bar.biggest {
@@ -149,7 +152,7 @@ main {
             cursor: pointer;
         }
         .bar:hover + span {
-            display: block;
+            visibility: visible;
         }
         .day span {
             color: $cream;
@@ -158,9 +161,11 @@ main {
             border-radius: 3px;
             margin-bottom: 5px;
             font-size: 1.1rem;
-            display: none;
+            visibility: hidden;
             @include media-min('tablet-down') {
-                font-size: 1.5rem;;
+                font-size: 2rem;
+                padding: 5px 8px;
+                border-radius: 5px;
             }
         }
     }
@@ -187,7 +192,7 @@ main {
             font-weight: 700;
             font-size: 3rem;
             @include media-min('tablet-down') {
-                font-size: 4rem;;
+                font-size: 5rem;
             }
         }
         .progress {

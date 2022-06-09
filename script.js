@@ -1,9 +1,13 @@
 var chart = document.querySelector('.card .chart');
 var day = document.querySelector('.chart .day.mon p');
+var span = document.querySelector('.chart .day.mon span');
 var dayHeight = day.offsetHeight;
 dayHeight += parseInt(window.getComputedStyle(day).getPropertyValue('margin-top'));
 dayHeight += parseInt(window.getComputedStyle(day).getPropertyValue('margin-bottom'));
-var maxBarSize = chart.clientHeight - dayHeight;
+var spanHeight = span.offsetHeight;
+spanHeight += parseInt(window.getComputedStyle(span).getPropertyValue('margin-top'));
+spanHeight += parseInt(window.getComputedStyle(span).getPropertyValue('margin-bottom'));
+var maxBarSize = chart.clientHeight - dayHeight - spanHeight;
 fetch('data.json')
 .then(function (response) {
     if (!response.ok) {

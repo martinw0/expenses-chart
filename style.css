@@ -49,7 +49,8 @@ main {
 }
 @media screen and (min-width: 900px) {
   .status {
-    padding: 22px;
+    padding: 22px 50px;
+    border-radius: 15px;
   }
 }
 .status h1 {
@@ -101,6 +102,7 @@ main {
     margin-top: 22px;
     width: 538px;
     padding: 30px;
+    border-radius: 15px;
   }
 }
 .card h2 {
@@ -147,6 +149,7 @@ main {
 @media screen and (min-width: 900px) {
   .card .chart .bar {
     width: 50px;
+    border-radius: 5px;
   }
 }
 .card .chart .bar.biggest {
@@ -157,7 +160,7 @@ main {
   cursor: pointer;
 }
 .card .chart .bar:hover + span {
-  display: block;
+  visibility: visible;
 }
 .card .chart .day span {
   color: hsl(27deg, 66%, 92%);
@@ -166,11 +169,13 @@ main {
   border-radius: 3px;
   margin-bottom: 5px;
   font-size: 1.1rem;
-  display: none;
+  visibility: hidden;
 }
 @media screen and (min-width: 900px) {
   .card .chart .day span {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding: 5px 8px;
+    border-radius: 5px;
   }
 }
 .card hr {
@@ -203,7 +208,7 @@ main {
 }
 @media screen and (min-width: 900px) {
   .card .result h3 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 .card .result .progress {

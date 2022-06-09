@@ -19,10 +19,22 @@ body {
   flex-direction: column;
   background-color: hsl(27deg, 66%, 92%);
 }
+@media screen and (min-width: 900px) {
+  body {
+    align-items: center;
+  }
+}
 
 main {
   flex-grow: 1;
   margin: 50px 30px;
+}
+@media screen and (min-width: 900px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .status {
@@ -35,14 +47,29 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 900px) {
+  .status {
+    padding: 22px;
+  }
+}
 .status h1 {
   font-size: 1.5rem;
   font-weight: 400;
+}
+@media screen and (min-width: 900px) {
+  .status h1 {
+    font-size: 1.8rem;
+  }
 }
 .status p {
   margin-top: 6px;
   font-size: 2.5rem;
   font-weight: 700;
+}
+@media screen and (min-width: 900px) {
+  .status p {
+    font-size: 2.8rem;
+  }
 }
 .status .logo {
   position: relative;
@@ -69,8 +96,20 @@ main {
   border-radius: 8px;
   padding: 20px 15px;
 }
+@media screen and (min-width: 900px) {
+  .card {
+    margin-top: 22px;
+    width: 538px;
+    padding: 30px;
+  }
+}
 .card h2 {
   font-size: 2.2rem;
+}
+@media screen and (min-width: 900px) {
+  .card h2 {
+    font-size: 3rem;
+  }
 }
 .card .chart {
   margin-top: 43px;
@@ -79,20 +118,36 @@ main {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 900px) {
+  .card .chart {
+    height: 250px;
+  }
+}
 .card .chart .day {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  width: 55px;
 }
 .card .chart .day p {
-  margin: 5px 0;
+  margin: 10px 0;
   color: hsl(28deg, 10%, 53%);
   font-size: 1.2rem;
+}
+@media screen and (min-width: 900px) {
+  .card .chart .day p {
+    font-size: 1.5rem;
+  }
 }
 .card .chart .bar {
   width: 31px;
   background-color: hsl(10deg, 79%, 65%);
   border-radius: 3px;
+}
+@media screen and (min-width: 900px) {
+  .card .chart .bar {
+    width: 50px;
+  }
 }
 .card .chart .bar.biggest {
   background-color: hsl(186deg, 34%, 60%);
@@ -113,6 +168,11 @@ main {
   font-size: 1.1rem;
   display: none;
 }
+@media screen and (min-width: 900px) {
+  .card .chart .day span {
+    font-size: 1.5rem;
+  }
+}
 .card hr {
   border-top: solid hsl(27deg, 66%, 92%) 1.5px;
 }
@@ -121,15 +181,30 @@ main {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 900px) {
+  .card .result {
+    margin-top: 35px;
+  }
+}
 .card .result p {
   font-size: 1.5rem;
   color: hsl(28deg, 10%, 53%);
+}
+@media screen and (min-width: 900px) {
+  .card .result p {
+    font-size: 2rem;
+  }
 }
 .card .result h3 {
   margin-top: 7px;
   color: hsl(25deg, 47%, 15%);
   font-weight: 700;
   font-size: 3rem;
+}
+@media screen and (min-width: 900px) {
+  .card .result h3 {
+    font-size: 4rem;
+  }
 }
 .card .result .progress {
   align-self: flex-end;
@@ -138,6 +213,11 @@ main {
   text-align: right;
   color: hsl(25deg, 47%, 15%);
   font-size: 1.4rem;
+}
+@media screen and (min-width: 900px) {
+  .card .result h4 {
+    font-size: 2rem;
+  }
 }
 
 .attribution {

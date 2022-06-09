@@ -35,10 +35,18 @@ body {
     display: flex;
     flex-direction: column;
     background-color: $cream;
+    @include media-min('tablet-down') {
+        align-items: center;
+    }
 }
 main {
     flex-grow: 1;
     margin: 50px 30px;
+    @include media-min('tablet-down') {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 .status {
     background-color: $soft-red;
@@ -49,14 +57,23 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media-min('tablet-down') {
+        padding: 22px;
+    }
     h1 {
         font-size: 1.5rem;
         font-weight: 400;
+        @include media-min('tablet-down') {
+            font-size: 1.8rem;
+        }
     }
     p {
         margin-top: 6px;
         font-size: 2.5rem;
         font-weight: 700;
+        @include media-min('tablet-down') {
+            font-size: 2.8rem;
+        }
     }
     .logo {
         position: relative;
@@ -82,8 +99,16 @@ main {
     margin-top: 16px;
     border-radius: 8px;
     padding: 20px 15px;
+    @include media-min('tablet-down') {
+        margin-top: 22px;
+        width: 538px;
+        padding: 30px;
+    }
     h2 {
         font-size: 2.2rem;
+        @include media-min('tablet-down') {
+            font-size: 3rem;
+        }
     }
     .chart {
         margin-top: 43px;
@@ -91,20 +116,30 @@ main {
         height: 190px;
         display: flex;
         justify-content: space-between;
+        @include media-min('tablet-down') {
+            height: 250px;
+        }
         .day {
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
+            width: 55px;
             p {
-                margin: 5px 0;
+                margin: 10px 0;
                 color: $medium-brown;
                 font-size: 1.2rem;
+                @include media-min('tablet-down') {
+                    font-size: 1.5rem;
+                }
             }
         }
         .bar {
             width: 31px;
             background-color: $soft-red;
             border-radius: 3px;
+            @include media-min('tablet-down') {
+                width: 50px;
+            }
         }
         .bar.biggest {
             background-color: $cyan;
@@ -124,6 +159,9 @@ main {
             margin-bottom: 5px;
             font-size: 1.1rem;
             display: none;
+            @include media-min('tablet-down') {
+                font-size: 1.5rem;;
+            }
         }
     }
     hr {
@@ -133,15 +171,24 @@ main {
         margin-top: 25px;
         display: flex;
         justify-content: space-between;
+        @include media-min('tablet-down') {
+            margin-top: 35px;
+        }
         p {
             font-size: 1.5rem;
             color: $medium-brown;
+            @include media-min('tablet-down') {
+                font-size: 2rem;
+            }
         }
         h3 {
             margin-top: 7px;
             color: $dark-brown;
             font-weight: 700;
             font-size: 3rem;
+            @include media-min('tablet-down') {
+                font-size: 4rem;;
+            }
         }
         .progress {
             align-self: flex-end;
@@ -150,6 +197,9 @@ main {
             text-align: right;
             color: $dark-brown;
             font-size: 1.4rem;
+            @include media-min('tablet-down') {
+                font-size: 2rem;
+            }
         }
     }
 }

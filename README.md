@@ -48,9 +48,66 @@ Users should be able to:
 
 ### What I learned
 
+How to edit another element from hover element:
+
+```html
+<div id="a">Div A</div>
+<div id="b">Div B</div>
+```
+
+```css
+#a:hover + #b {
+    background: #ccc
+}
+```
+
+[jsfiddle](https://jsfiddle.net/u7tYE/)
+
+clientHeight includes padding.
+
+offsetHeight includes padding, scrollBar and borders.
+
+How can I read local JSON file with fetch function in javascript?
+```js
+readJson () {
+   // http://localhost:8080
+   fetch('/Reading/api/file')
+   .then(response => {
+       if (!response.ok) {
+           throw new Error("HTTP error " + response.status);
+       }
+       return response.json();
+   })
+   .then(json => {
+       this.users = json;
+       //console.log(this.users);
+   })
+   .catch(function () {
+       this.dataError = true;
+   })
+}
+```
+
+How to get the full height including margin
+```js
+var elHeight = el.offsetHeight;
+elHeight += parseInt(window.getComputedStyle(el).getPropertyValue('margin-top'));
+elHeight += parseInt(window.getComputedStyle(el).getPropertyValue('margin-bottom'));
+```
+
+How to create a list with the value of key in an array of objects:
+```js
+var nameArray = students.map(function (el) { return el.name; });
+```
+
 ### Continued development
 
 ### Useful resources
+
+[How TO - Tooltip](https://www.w3schools.com/howto/howto_css_tooltip.asp)
+[Get height of element](https://www.techiedelight.com/get-height-of-div-element-javascript/)
+[JS - height property](https://www.techiedelight.com/get-height-of-div-element-javascript/)
+[Changing HTML content with JS](https://www.w3schools.com/js/js_htmldom_html.asp)
 
 ## Author
 
